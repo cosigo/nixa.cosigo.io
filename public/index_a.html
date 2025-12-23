@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Nixa Satellite Administration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="/assets/style.css">
+
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+</head>
+
+<body>
+
+<nav class="main-nav">
+  <a href="#overview">Overview</a>
+  <a href="#smart-contract">Smart contract</a>
+  <a href="#live">Live</a>
+  <a href="#guardian">Guardian</a>
+  <a href="#roles">Roles</a>
+  <a href="https://cosigo.io" target="_blank" rel="noopener">Cosigo</a>
+</nav>
+
+<header class="site-header">
+  <img
+    src="/assets/brand/cosigo-logo.svg"
+    alt="Cosigo"
+    class="site-logo"
+  >
+
+  <h1>Nixa Satellite</h1>
+  <p class="tagline">
+    Independent satellite administration — associated with Cosigo Project
+  </p>
+</header>
+
+<main>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <h2>Overview</h2>
+    <p>
+      This satellite is operationally independent and governed locally.
+    </p>
+    <p>
+      On-chain assets remain publicly verifiable within the Cosigo ecosystem.
+    </p>
+  </section>
+
+  <!-- SMART CONTRACT -->
+  <section id="smart-contract">
+    <h2>Smart contract <span class="badge">
+      <img src="/assets/icons/eth.svg" alt="Ethereum" class="eth-icon">
+      Ethereum Mainnet
+      </span>
+    </h2>
+
+    <p>Primary satellite contract (Ethereum mainnet):</p>
+      
+      <span class="addr">
+        <a
+          href="https://etherscan.io/address/0xe9681ed7aa3ef3db4666ca07c6061003c6b1312d"
+          target="_blank"
+          rel="noopener"
+        >
+          0xe9681ed7…b1312d
+        </a>
+        <button onclick="copyAddr('0xe9681ed7aa3ef3db4666ca07c6061003c6b1312d')">
+          Copy
+        </button>
+      </span>
+    </p>
+    </div>
+
+    <div class="contract-token">
+      <a href="https://etherscan.io/address/0xe9681ed7aa3ef3db4666ca07c6061003c6b1312d">
+        <img src="/assets/icons/COSIGOSPIN-100.gif" alt="Cosigo token">
+      </a>
+    </div>
+
+  </section>
+
+  <!-- LIVE STREAM -->
+  <section id="live">
+    <h2>Live Stream</h2>
+
+    <p>Live broadcast from the Cosigo network.</p>
+
+    <div style="max-width:720px;">
+      <iframe
+        src="https://stream.cosigo.io/embed/video"
+        width="100%"
+        height="405"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <p>
+      <strong>Live now:</strong>
+      <a href="https://stream.cosigo.io" target="_blank" rel="noopener">
+        watch full stream
+      </a>
+    </p>
+
+    <!-- Crypto price ticker -->
+<div class="crypto-ticker">
+  <iframe
+    src="/assets/ticker.html"
+    style="width:100%;height:48px;border:0;"
+    loading="lazy">
+  </iframe>
+</div>
+
+  </section>
+
+  <!-- GUARDIAN -->
+  <section id="guardian">
+    <h2>Guardian</h2>
+
+    <p>
+      The Guardian contract enforces global integrity rules across the Cosigo ecosystem,
+      including Codex consistency and satellite authorization.
+    </p>
+
+    <p>
+      <strong>Guardian Contract (Ethereum Mainnet):</strong><br>
+      <span class="addr">
+        <a
+          href="https://etherscan.io/address/0x23d62338959d1F2ad9FA8A49c6D12f572a0F0B20"
+          target="_blank"
+          rel="noopener"
+        >
+          0x23d62338…0F0B20
+        </a>
+        <button onclick="copyAddr('0x23d62338959d1F2ad9FA8A49c6D12f572a0F0B20')">
+          Copy
+        </button>
+      </span>
+    </p>
+
+    <p>
+      The Guardian operates independently of individual satellites.
+    </p>
+  </section>
+
+  <!-- ROLES -->
+  <section id="roles">
+    <h2>Roles</h2>
+
+    <ul>
+      <li>
+        <strong>Owner / Administrator (Cold Storage):</strong>
+        <span class="addr">
+          <a
+            href="https://etherscan.io/address/0x7c2a941e7f8f58d3cd70b6deb3524b59af8e4f6e"
+            target="_blank"
+            rel="noopener"
+          >
+            0x7c2a941e…4f6e
+          </a>
+          <button onclick="copyAddr('0x7c2a941e7f8f58d3cd70b6deb3524b59af8e4f6e')">
+            Copy
+          </button>
+        </span>
+      </li>
+
+      <li>
+        <strong>Custodian (Cold Storage):</strong>
+        <span class="addr">
+          <a
+            href="https://etherscan.io/address/0x7b92f2db8934d87c7bbe888610cc657c22bbdbef"
+            target="_blank"
+            rel="noopener"
+          >
+            0x7b92f2db…dbef
+          </a>
+          <button onclick="copyAddr('0x7b92f2db8934d87c7bbe888610cc657c22bbdbef')">
+            Copy
+          </button>
+        </span>
+      </li>
+
+      <li>
+        <strong>Minter (Cold Storage):</strong>
+        <span class="addr">
+          <a
+            href="https://etherscan.io/address/0x715995b6bcdb88c2e032a615e875dd13f752769e"
+            target="_blank"
+            rel="noopener"
+          >
+            0x715995b6…2769e
+          </a>
+          <button onclick="copyAddr('0x715995b6bcdb88c2e032a615e875dd13f752769e')">
+            Copy
+          </button>
+        </span>
+      </li>
+
+      <li>
+        <strong>Fee Sink (Cold Storage):</strong>
+        <span class="addr">
+          <a
+            href="https://etherscan.io/address/0x7b7cd23eb3795d9c0927968be4c06191cc1baf05"
+            target="_blank"
+            rel="noopener"
+          >
+            0x7b7cd23e…baf05
+          </a>
+          <button onclick="copyAddr('0x7b7cd23eb3795d9c0927968be4c06191cc1baf05')">
+            Copy
+          </button>
+        </span>
+      </li>
+    </ul>
+
+    <p>
+      All listed addresses are maintained in cold storage.
+      Private keys remain offline and are never published.
+    </p>
+  </section>
+
+  <!-- ADMIN -->
+  <section>
+    <h2>Administration</h2>
+    <ul>
+      <li>Custodian records</li>
+      <li>Deposit attestations</li>
+      <li>Redemption policies</li>
+      <li>Operator notices</li>
+    </ul>
+    <p><em>Administrative tools coming soon.</em></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    Associated with <a href="https://cosigo.io">cosigo.io</a> •
+    Independent satellite operation
+  </p>
+</footer>
+
+<script>
+function copyAddr(addr) {
+  navigator.clipboard.writeText(addr).then(() => {
+    alert("Address copied to clipboard");
+  });
+}
+</script>
+
+</body>
+</html>
