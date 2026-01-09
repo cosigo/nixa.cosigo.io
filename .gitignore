@@ -17,3 +17,7 @@ build/
 
 # Allow tracked placeholders
 !.gitkeep
+
+# Per-satellite secrets
+public/_config/*
+!public/_config/README.md
