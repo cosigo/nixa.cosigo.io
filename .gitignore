@@ -21,3 +21,6 @@ build/
 # Per-satellite secrets
 public/_config/*
 !public/_config/README.md
+
+lib/PHPMailer/
+public/lib/PHPMailer-master/
