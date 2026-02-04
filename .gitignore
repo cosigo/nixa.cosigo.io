@@ -24,3 +24,4 @@ public/_config/*
 
 lib/PHPMailer/
 public/lib/PHPMailer-master/
+_config/mail.php
