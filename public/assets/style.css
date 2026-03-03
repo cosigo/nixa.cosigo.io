@@ -232,6 +232,36 @@ main a:hover{
   filter: drop-shadow(0 10px 22px rgba(180,106,60,.35));
 }
 
+.contact-form{
+  display:block; /* simplest, bulletproof */
+}
+
+.contact-form label{
+  display:block;
+  margin: 0 0 12px 0;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+}
+
+.contact-fields{ display:block; }
+
+.hp{
+  position:absolute !important;
+  left:-9999px !important;
+  width:1px !important;
+  height:1px !important;
+  overflow:hidden !important;
+  opacity:0 !important;
+  pointer-events:none !important;
+}
+
+/* hard-hide honeypot even if other rules override */
+.contact-form input.hp{
+  display: none !important;
+}
 
 /* =====================================================
   FOOTER
