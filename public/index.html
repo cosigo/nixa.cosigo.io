@@ -244,33 +244,19 @@
 
 <h3>Contact Administration</h3>
 
-<form class="contact-form" action="https://contact.cosigo.io/api/mail.php" method="POST">  <!-- Honeypot -->
-  <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
-
-  <!-- Redirect back to this satellite -->
+<form class="contact-form" action="https://contact.cosigo.io/api/mail.php" method="POST">
+  <input type="hidden" name="_gotcha" value="">
   <input type="hidden" name="_redirect" value="/thanks.html">
-
-  <!-- Context -->
   <input type="hidden" name="site" value="nixa.cosigo.io">
   <input type="hidden" name="page" id="contact_page">
   <input type="hidden" name="subject" value="Cosigo inquiry (nixa)">
 
-  <label>
-    Name
-    <input name="name" required>
-  </label>
-
-  <label>
-    Email
-    <input name="email" type="email" required>
-  </label>
-
-  <label>
-    Message
-    <textarea name="message" rows="6" required></textarea>
-  </label>
-
-  <button class="btn primary" type="submit">Send</button>
+  <div class="contact-fields">
+    <label>Name <input name="name" required></label>
+    <label>Email <input name="email" type="email" required></label>
+    <label>Message <textarea name="message" rows="6" required></textarea></label>
+    <button class="btn primary" type="submit">Send</button>
+  </div>
 </form>
 
 <script>
